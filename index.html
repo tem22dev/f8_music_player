@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/icons/favicon-16x16.png"
+        />
+        <title>Music Player</title>
+        <link rel="shortcut icon" href="#" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="player">
+            <!-- Dashboard -->
+            <div class="dashboard">
+                <!-- Notify -->
+                <div class="notify"></div>
+                <!-- Header -->
+                <header>
+                    <div class="header-back">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </div>
+                    <div class="header-menu">
+                        <i class="ri-more-2-fill"></i>
+                    </div>
+                </header>
+                <!-- Title -->
+                <div class="title">
+                    <h4>Song name</h4>
+                    <p>Singer name</p>
+                </div>
+                <!-- CD -->
+                <div class="cd">
+                    <div class="cd-thumb"></div>
+                </div>
+                <!-- Time -->
+                <div class="time">
+                    <input
+                        type="range"
+                        id="propress"
+                        class="propress"
+                        value="0"
+                        step="1"
+                        min="0"
+                        max="100"
+                    />
+                    <div>
+                        <span id="current-time">00:00</span>
+                        <span id="duration-time">00:00</span>
+                    </div>
+                </div>
+                <audio src="" id="audio"></audio>
+                <!-- Control -->
+                <div class="control">
+                    <div class="btn btn-repeat">
+                        <i class="ri-repeat-line"></i>
+                    </div>
+                    <div class="btn btn-prev">
+                        <i class="ri-rewind-fill"></i>
+                    </div>
+                    <div class="btn btn-togle-play">
+                        <i class="ri-play-fill icon-play"></i>
+                        <i class="ri-pause-fill icon-pause"></i>
+                    </div>
+                    <div class="btn btn-next">
+                        <i class="ri-speed-fill"></i>
+                    </div>
+                    <div class="btn btn-random">
+                        <i class="ri-shuffle-line"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- PLaylist -->
+            <div class="playlist"></div>
+        </div>
+        <script src="./app.js"></script>
+    </body>
+</html>
